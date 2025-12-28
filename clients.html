@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Clients</title>
+    <script src="https://kit.fontawesome.com/c27c843cd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <!-- Sidebar -->
+<aside>
+    <div class="top">
+        <div class="logo">
+            <h2>Cyb<span class="danger">sera</span></h2>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <a href="./index.html">
+            <i class="fa-solid fa-bars"></i>
+            <h3 data-i18n="dashboard">Dashboard</h3>
+        </a>
+
+        <a href="./clients.html" class="active">
+            <i class="fa-solid fa-user"></i>
+            <h3 data-i18n="customers">Clients</h3>
+        </a>
+
+        <a href="./orders.html">
+            <i class="fa-solid fa-inbox"></i>
+            <h3 data-i18n="orders">Commandes</h3>
+        </a>
+
+        <a href="./products.html">
+            <i class="fa-regular fa-chart-bar"></i>
+            <h3 data-i18n="products">Produits</h3>
+        </a>
+
+        <a href="./users.html">
+            <i class="fa-solid fa-person"></i>
+            <h3 data-i18n="user">Utilisateurs</h3>
+        </a>
+        <a href="./suppliers.html">
+            <i class="fa-solid fa-truck"></i>
+            <h3>Suppliers</h3></a>
+        <a href="./login.html">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <h3 data-i18n="logout">Déconnexion</h3>
+        </a>
+    </div>
+</aside>
+
+
+        <!-- Main -->
+        <main>
+            <h1 data-i18n="customers">Clients</h1>
+
+            <div class="recent-order">
+                <!-- Recherche + Ajout + Export PDF -->
+                <div class="controls">
+                    <input type="text" id="searchInput" placeholder="Rechercher..." data-i18n-placeholder="search_placeholder">
+                    <button id="addBtn" data-i18n="add_product">Ajouter</button>
+                    <button id="pdfBtn" data-i18n="export_pdf">Exporter PDF</button>
+                </div>
+
+                <!-- Tableau -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-i18n="name" onclick="sortClients('nom')">Nom</th>
+                            <th data-i18n="id" onclick="sortClients('id')">Id</th>
+                            <th data-i18n="email" onclick="sortClients('email')">Email</th>
+                            <th data-i18n="address" onclick="sortClients('adresse')">Adresse</th>
+                            <th data-i18n="actions">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Les lignes seront générées par JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <!-- Right Panel -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <i class="fa-solid fa-align-justify"></i>
+                </button>
+                <div class="theme-toggler">
+                    <i class="fa-regular fa-sun active"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="lang-selector">
+                    <select id="lang-select">
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="en">🇬🇧 English</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Adam</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./pictures/1-intro-photo-final.jpg" alt="Profile Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JS -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/crud/crud.js"></script>
+    <script src="./js/darkmode.js"></script>
+</body>
+</html>

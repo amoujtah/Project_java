@@ -1,0 +1,107 @@
+[
+  {
+    "productName": "Foldable Mini Drone",
+    "productNumber": "B34982",
+    "price": 1200,
+    "quantity": 1,
+    "status": "Available"
+  },
+  {
+    "productName": "Gaming Headset",
+    "productNumber": "C58291",
+    "price": 800,
+    "quantity": 2,
+    "status": "Available"
+  },
+  {
+    "productName": "Smart Watch",
+    "productNumber": "D19203",
+    "price": 1500,
+    "quantity": 1,
+    "status": "Available"
+  },
+  {
+    "productName": "Wireless Mouse",
+    "productNumber": "E48201",
+    "price": 250,
+    "quantity": 3,
+    "status": "Available"
+  },
+  {
+    "productName": "Mechanical Keyboard",
+    "productNumber": "F72019",
+    "price": 900,
+    "quantity": 1,
+    "status": "Available"
+  },
+  {
+    "productName": "Bluetooth Speaker",
+    "productNumber": "G15492",
+    "price": 600,
+    "quantity": 2,
+    "status": "Available"
+  },
+  {
+    "productName": "HD Webcam",
+    "productNumber": "H93821",
+    "price": 450,
+    "quantity": 1,
+    "status": "OutOfStock"
+  },
+  {
+    "productName": "Gaming Chair",
+    "productNumber": "I47289",
+    "price": 2200,
+    "quantity": 1,
+    "status": "Available"
+  },
+  {
+    "productName": "VR Headset",
+    "productNumber": "J81243",
+    "price": 3200,
+    "quantity": 1,
+    "status": "Available"
+  },
+  {
+    "productName": "External SSD",
+    "productNumber": "K57302",
+    "price": 1100,
+    "quantity": 2,
+    "status": "Available"
+  },
+  {
+    "productName": "4K Monitor",
+    "productNumber": "L39028",
+    "price": 1400,
+    "quantity": 1,
+    "status": "Available"
+  },
+  {
+    "productName": "USB-C Hub",
+    "productNumber": "M48192",
+    "price": 120,
+    "quantity": 5,
+    "status": "Available"
+  },
+  {
+    "productName": "Portable Charger",
+    "productNumber": "N58302",
+    "price": 80,
+    "quantity": 10,
+    "status": "Available"
+  },
+  {
+    "productName": "Noise-Cancelling Headphones",
+    "productNumber": "O29481",
+    "price": 300,
+    "quantity": 2,
+    "status": "OutOfStock"
+  },
+  {
+    "productName": "Smart Light Bulb",
+    "productNumber": "P10293",
+    "price": 50,
+    "quantity": 20,
+    "status": "Available"
+  }
+]

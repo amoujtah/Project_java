@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Products</title>
+    <script src="https://kit.fontawesome.com/c27c843cd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <h2>Cyb<span class="danger">sera</span></h2>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a href="./index.html"><i class="fa-solid fa-bars"></i><h3>Dashboard</h3></a>
+                <a href="./clients.html"><i class="fa-solid fa-user"></i><h3>Customers</h3></a>
+                <a href="./orders.html"><i class="fa-solid fa-inbox"></i><h3>Orders</h3></a>
+                <a href="./products.html" class="active"><i class="fa-regular fa-chart-bar"></i><h3>Products</h3></a>
+                <a href="./users.html"><i class="fa-solid fa-person"></i><h3>User</h3></a>
+                <a href="./suppliers.html"><i class="fa-solid fa-truck"></i><h3>Suppliers</h3></a>
+                <a href="./login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i><h3>Logout</h3></a>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main>
+            <h1>Products</h1>
+            <div class="recent-order">
+                <!-- Recherche + Ajout + Export PDF -->
+                <div class="controls">
+                    <input type="text" id="searchProducts" placeholder="Search products...">
+                    <button id="addProductBtn">Add Product</button>
+                    <button id="pdfProductsBtn">Export PDF</button>
+                </div>
+
+                <!-- Tableau -->
+                <table id="productsTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortProducts('productName')">Product Name</th>
+                            <th onclick="sortProducts('productNumber')">Product ID</th>
+                            <th onclick="sortProducts('price')">Price</th>
+                            <th onclick="sortProducts('quantity')">Quantity</th>
+                            <th onclick="sortProducts('status')">Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Les lignes seront générées par JS -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <!-- Right Panel -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn"><i class="fa-solid fa-align-justify"></i></button>
+                <div class="theme-toggler">
+                    <i class="fa-regular fa-sun active"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="lang-selector">
+                    <select id="lang-select">
+                        <option value="fr">🇫🇷 Français</option>
+                        <option value="en">🇬🇧 English</option>
+                        <option value="ar">🇸🇦 العربية</option>
+                    </select>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Admin</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./pictures/1-intro-photo-final.jpg" alt="Profile Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+    <script src="./js/crud/crud_product.js"></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/darkmode.js"></script>
+</body>
+</html>

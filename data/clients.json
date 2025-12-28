@@ -1,0 +1,17 @@
+[
+  { "id": 1, "nom": "Ali", "email": "ali@gmail.com", "adresse": "12 rue Hassan II, Casablanca" },
+  { "id": 2, "nom": "Sara", "email": "sara@gmail.com", "adresse": "45 avenue Mohammed V, Rabat" },
+  { "id": 3, "nom": "Karim", "email": "karim@gmail.com", "adresse": "8 rue Al Qods, Marrakech" },
+  { "id": 4, "nom": "Laila", "email": "laila@gmail.com", "adresse": "22 boulevard Zerktouni, Casablanca" },
+  { "id": 5, "nom": "Youssef", "email": "youssef@gmail.com", "adresse": "17 rue Ibn Sina, Fès" },
+  { "id": 6, "nom": "Imane", "email": "imane@gmail.com", "adresse": "30 avenue Atlas, Agadir" },
+  { "id": 7, "nom": "Hassan", "email": "hassan@gmail.com", "adresse": "5 rue Moulay Ismail, Meknès" },
+  { "id": 8, "nom": "Fatima", "email": "fatima@gmail.com", "adresse": "14 avenue des FAR, Oujda" },
+  { "id": 9, "nom": "Omar", "email": "omar@gmail.com", "adresse": "9 rue Al Andalous, Tétouan" },
+  { "id": 10, "nom": "Nadia", "email": "nadia@gmail.com", "adresse": "27 boulevard Hassan I, Safi" },
+  { "id": 11, "nom": "Rachid", "email": "rachid@gmail.com", "adresse": "19 rue Mohammed VI, El Jadida" },
+  { "id": 12, "nom": "Salma", "email": "salma@gmail.com", "adresse": "33 avenue Oued Fes, Fès" },
+  { "id": 13, "nom": "Mohamed", "email": "mohamed@gmail.com", "adresse": "41 rue Ibn Battouta, Tanger" },
+  { "id": 14, "nom": "Khadija", "email": "khadija@gmail.com", "adresse": "6 boulevard Moulay Youssef, Casablanca" },
+  { "id": 15, "nom": "Tariq", "email": "tariq@gmail.com", "adresse": "11 rue Abdelkrim El Khattabi, Nador" }
+]

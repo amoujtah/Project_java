@@ -1,0 +1,7 @@
+[
+  { "id": 1, "nom": "Ali", "email": "ali@gmail.com", "role": "admin" },
+  { "id": 2, "nom": "Sara", "email": "sara@gmail.com", "role": "admin" },
+  { "id": 3, "nom": "Karim", "email": "karim@gmail.com", "role": "client" },
+  { "id": 4, "nom": "Laila", "email": "laila@gmail.com", "role": "client" },
+  { "id": 5, "nom": "Youssef", "email": "youssef@gmail.com", "role": "client" }
+]

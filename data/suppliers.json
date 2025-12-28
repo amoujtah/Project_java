@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Fournisseur Alpha",
+    "email": "contact@alpha.com",
+    "phone": "+212600111222"
+  },
+  {
+    "id": 2,
+    "name": "Fournisseur Beta",
+    "email": "contact@beta.com",
+    "phone": "+212600333444"
+  },
+  {
+    "id": 3,
+    "name": "Fournisseur Gamma",
+    "email": "contact@gamma.com",
+    "phone": "+212600555666"
+  },
+  {
+    "id": 4,
+    "name": "Fournisseur Delta",
+    "email": "contact@delta.com",
+    "phone": "+212600777888"
+  },
+  {
+    "id": 5,
+    "name": "Fournisseur Epsilon",
+    "email": "contact@epsilon.com",
+    "phone": "+212600999000"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "productName": "Foldable Mini Drone",
+    "productNumber": "B34982",
+    "customerName": "Ali",
+    "payment": "Due",
+    "status": "Pending",
+    "price": 1200,
+    "quantity": 1,
+    "total": 1200
+  },
+  {
+    "productName": "Gaming Headset",
+    "productNumber": "C58291",
+    "customerName": "Sara",
+    "payment": "Paid",
+    "status": "Delivered",
+    "price": 800,
+    "quantity": 2,
+    "total": 1600
+  },
+  {
+    "productName": "Smart Watch",
+    "productNumber": "D19203",
+    "customerName": "Karim",
+    "payment": "Refund",
+    "status": "Declined",
+    "price": 1500,
+    "quantity": 1,
+    "total": 1500
+  },
+  {
+    "productName": "Wireless Mouse",
+    "productNumber": "E48201",
+    "customerName": "Laila",
+    "payment": "Paid",
+    "status": "Delivered",
+    "price": 250,
+    "quantity": 3,
+    "total": 750
+  },
+  {
+    "productName": "Mechanical Keyboard",
+    "productNumber": "F72019",
+    "customerName": "Youssef",
+    "payment": "Due",
+    "status": "Pending",
+    "price": 900,
+    "quantity": 1,
+    "total": 900
+  },
+  {
+    "productName": "Bluetooth Speaker",
+    "productNumber": "G15492",
+    "customerName": "Imane",
+    "payment": "Paid",
+    "status": "Delivered",
+    "price": 600,
+    "quantity": 2,
+    "total": 1200
+  },
+  {
+    "productName": "HD Webcam",
+    "productNumber": "H93821",
+    "customerName": "Hassan",
+    "payment": "Refund",
+    "status": "Declined",
+    "price": 450,
+    "quantity": 1,
+    "total": 450
+  },
+  {
+    "productName": "Gaming Chair",
+    "productNumber": "I47289",
+    "customerName": "Fatima",
+    "payment": "Due",
+    "status": "Pending",
+    "price": 2200,
+    "quantity": 1,
+    "total": 2200
+  },
+  {
+    "productName": "VR Headset",
+    "productNumber": "J81243",
+    "customerName": "Omar",
+    "payment": "Paid",
+    "status": "Delivered",
+    "price": 3200,
+    "quantity": 1,
+    "total": 3200
+  },
+  {
+    "productName": "External SSD",
+    "productNumber": "K57302",
+    "customerName": "Nadia",
+    "payment": "Paid",
+    "status": "Delivered",
+    "price": 1100,
+    "quantity": 2,
+    "total": 2200
+  }
+]
