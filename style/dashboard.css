@@ -1051,3 +1051,363 @@ td.role.client {
     color: #3498db; /* bleu pour client */
     font-weight: bold;
 }
+
+/* === Dashboard polish === */
+:root {
+    --bo-bg: #f4f6f8;
+    --bo-panel: #ffffff;
+    --bo-text: #111827;
+    --bo-muted: #6b7788;
+    --bo-line: #e6ebf2;
+    --bo-primary: #7380ec;
+    --bo-shadow: 0 18px 44px rgba(38, 51, 77, 0.08);
+}
+
+body {
+    min-height: 100vh;
+    height: auto;
+    background: var(--bo-bg);
+    color: var(--bo-text);
+}
+
+.container {
+    width: min(96%, 1780px);
+    grid-template-columns: 14rem minmax(0, 1fr) minmax(23rem, 26rem);
+    gap: 2rem;
+    align-items: start;
+}
+
+aside {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    border-right: 1px solid var(--bo-line);
+}
+
+aside .top {
+    min-height: 6rem;
+    margin-top: 0;
+}
+
+aside .sidebar {
+    margin-top: 1rem;
+}
+
+aside .sidebar a {
+    border-radius: 0;
+}
+
+main,
+.right {
+    min-width: 0;
+}
+
+main h1 {
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+    line-height: 1.1;
+}
+
+main .insights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 0;
+}
+
+main .insights > div,
+.card {
+    min-height: 10.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    border: 1px solid rgba(230, 235, 242, 0.9);
+    border-radius: 8px;
+    box-shadow: var(--bo-shadow);
+}
+
+.card:hover,
+main .insights > div:hover,
+main .recent-order table:hover,
+.right .sales-analytics .item:hover {
+    box-shadow: 0 10px 28px rgba(38, 51, 77, 0.1);
+}
+
+.card h3 {
+    color: #555b66;
+    font-size: 1.05rem;
+}
+
+.card p {
+    color: var(--bo-primary);
+}
+
+main .recent-order {
+    min-height: auto;
+    margin-top: 2.8rem;
+}
+
+main .recent-order h2 {
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+}
+
+main .recent-order table,
+.recent-order table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    padding: 1.8rem 2.1rem;
+    border: 1px solid rgba(230, 235, 242, 0.9);
+    border-radius: 8px;
+    box-shadow: var(--bo-shadow);
+}
+
+.recent-order table thead th {
+    padding: 0.8rem 0.6rem 1rem;
+    color: var(--bo-text);
+    font-size: 0.94rem;
+    white-space: nowrap;
+}
+
+.recent-order table thead th::after {
+    display: none;
+}
+
+.recent-order table thead th[onclick]::after {
+    display: inline;
+    content: ' ⇅';
+    position: static;
+    margin-left: 0.35rem;
+    color: #b8c0cc;
+    font-size: 0.74rem;
+}
+
+main table tbody td,
+.recent-order tbody td {
+    height: auto;
+    padding: 0.95rem 0.6rem;
+    color: var(--bo-muted);
+    line-height: 1.35;
+}
+
+main table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.right .top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.9rem;
+    min-width: 0;
+    margin-bottom: 1rem;
+}
+
+.right .theme-toggler {
+    flex: 0 0 auto;
+}
+
+.right .lang-selector,
+.right .profile {
+    min-width: 0;
+}
+
+.right .lang-selector select,
+.right #lang-select {
+    width: 7.2rem;
+    max-width: 100%;
+    padding: 0.28rem 0.45rem;
+    border: 1px solid var(--bo-line);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--bo-text);
+    font-weight: 600;
+}
+
+.right .top .profile {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    gap: 0.75rem;
+}
+
+.right .profile .info {
+    min-width: 0;
+}
+
+.right .profile .info p,
+.right .profile .info small {
+    max-width: 8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.right .profile-photo {
+    flex: 0 0 3rem;
+}
+
+.right .sales-analytics {
+    min-width: 0;
+}
+
+.right .sales-analytics h2 {
+    margin: 0 0 1rem;
+    font-size: 1.65rem;
+}
+
+.right .sales-analytics .item {
+    min-height: 6.5rem;
+    margin-bottom: 1rem;
+    padding: 1.35rem 1.45rem;
+    border: 1px solid rgba(230, 235, 242, 0.9);
+    border-radius: 8px;
+    box-shadow: var(--bo-shadow);
+}
+
+.right .sales-analytics .item .right {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.right .sales-analytics .item .right .info {
+    min-width: 0;
+}
+
+.right .sales-analytics .item .right .info h3,
+.right .sales-analytics .item .right .info small {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.right .sales-analytics .item.revenue .right {
+    grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.right .sales-analytics .add-product {
+    min-height: 5.8rem;
+    border-radius: 8px;
+}
+
+body.dark-theme-variables main .insights > div,
+body.dark-theme-variables .card,
+body.dark-theme-variables main .recent-order table,
+body.dark-theme-variables .recent-order table,
+body.dark-theme-variables .right .sales-analytics .item {
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+body.dark-theme-variables .right .lang-selector select,
+body.dark-theme-variables .right #lang-select {
+    background: #2a2d3f;
+    color: #edeffd;
+    border-color: #44485a;
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        grid-template-columns: 7rem minmax(0, 1fr);
+    }
+
+    aside .logo h2,
+    aside .sidebar h3 {
+        display: none;
+    }
+
+    aside .sidebar a {
+        width: 100%;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .right {
+        grid-column: 2;
+        width: 100%;
+    }
+
+    .right .sales-analytics {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .right .sales-analytics h2,
+    .right .sales-analytics .add-product {
+        grid-column: 1 / -1;
+    }
+
+    .right .sales-analytics .item {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: min(96%, 1100px);
+        grid-template-columns: 7rem minmax(0, 1fr);
+    }
+
+    main .recent-order {
+        position: relative;
+        left: auto;
+        width: 100%;
+        margin: 2rem 0 0;
+        transform: none;
+    }
+
+    main .recent-order table {
+        width: 100%;
+    }
+
+    main table thead tr th:first-child,
+    main table thead tr th:last-child,
+    main table tbody tr td:first-child,
+    main table tbody tr td:last-child {
+        display: table-cell;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: calc(100% - 1.5rem);
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        position: fixed;
+        display: none;
+    }
+
+    main {
+        margin-top: 6rem;
+    }
+
+    main .insights {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .right {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .right .sales-analytics {
+        grid-template-columns: 1fr;
+    }
+
+    .recent-order {
+        overflow-x: auto;
+    }
+
+    main .recent-order table,
+    .recent-order table {
+        min-width: 760px;
+    }
+}

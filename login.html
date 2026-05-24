@@ -3,38 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
-    <script src="js/login.js"></script>
+    <title>Connexion | Cybsera Back Office</title>
     <link rel="stylesheet" href="./style/login.css">
     <script src="https://kit.fontawesome.com/c27c843cd0.js" crossorigin="anonymous"></script>
+    <script src="./js/login.js" defer></script>
 </head>
 <body>
+    <main class="login-shell">
+        <section class="brand-panel" aria-label="Cybsera Back Office">
+            <div class="brand-top">
+                <img src="./pictures/logo-db9aa0c8-cd2a-4811-ad5a-53fe119eba9f.jpeg" alt="Cybsera">
+                <span>Back-office</span>
+            </div>
 
-    <section class="login-box">
-        <h1>Connexion</h1>
+            <div class="brand-copy">
+                <p class="eyebrow">Console admin</p>
+                <h1>Cybsera</h1>
+                <p>Accès sécurisé à votre espace de pilotage.</p>
+            </div>
 
-        <div class="input-box">
-            <input type="text" id="username" required>
-            <label for="username">Nom d'utilisateur</label>
-            <i class="fa-brands fa-black-tie"></i>
-        </div>
+            <div class="brand-metrics" aria-label="Aperçu du back-office">
+                <div>
+                    <strong>24/7</strong>
+                    <span>Monitoring</span>
+                </div>
+                <div>
+                    <strong>5</strong>
+                    <span>Modules</span>
+                </div>
+                <div>
+                    <strong>Admin</strong>
+                    <span>Access</span>
+                </div>
+            </div>
+        </section>
 
-        <div class="input-box">
-            <input type="password" id="password" required>
-            <label for="password">Mot de passe</label>
-            <i class="fa-solid fa-key"></i>
-        </div>
+        <section class="login-panel" aria-labelledby="login-title">
+            <div class="login-card">
+                <div class="form-header">
+                    <span class="secure-badge">
+                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                        Session sécurisée
+                    </span>
+                    <h2 id="login-title">Connexion</h2>
+                    <p>Entrez vos identifiants administrateur.</p>
+                </div>
 
-        <div class="remember-forgot">
-            <label>
-                <input type="checkbox">
-                Se souvenir de moi
-            </label>
-            <a href="#">Mot de passe oublié ?</a>
-        </div>
+                <form id="loginForm" class="login-form" novalidate>
+                    <div class="input-box">
+                        <label for="username">Nom d'utilisateur</label>
+                        <div class="field-control">
+                            <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+                            <input type="text" id="username" name="username" autocomplete="username" required>
+                        </div>
+                    </div>
 
-        <button class="login-btn">Connexion</button>
-    </section>
+                    <div class="input-box">
+                        <label for="password">Mot de passe</label>
+                        <div class="field-control">
+                            <i class="fa-solid fa-key" aria-hidden="true"></i>
+                            <input type="password" id="password" name="password" autocomplete="current-password" required>
+                            <button class="password-toggle" type="button" aria-label="Afficher le mot de passe">
+                                <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
 
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox" id="remember">
+                            <span>Se souvenir de moi</span>
+                        </label>
+                        <button type="button" id="forgotPassword">Mot de passe oublié ?</button>
+                    </div>
+
+                    <p id="loginMessage" class="login-message" role="alert" aria-live="polite"></p>
+
+                    <button class="login-btn" type="submit">
+                        <span>Ouvrir le back-office</span>
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
